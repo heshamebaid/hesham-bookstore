@@ -27,7 +27,7 @@ A Java-based simulation of an online bookstore designed for the Fawry Internship
 ```
 hesham-bookstore/
 ├── README.md
-├── screenshot.png
+├── Screenshot.png
 └── src/
     ├── app/
     │   └── HeshamBookstoreTest.java
