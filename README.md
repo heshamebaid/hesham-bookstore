@@ -55,7 +55,7 @@ java -cp bin app.HeshamBookstoreTest
 
 ## Sample Output (Screenshot)
 
-![Console Screenshot](screenshot.png)
+![Console Screenshot](Screenshot.png)
 
 ---
 
