@@ -1,18 +1,64 @@
+# Hesham's Bookstore
+
+A Java-based simulation of an online bookstore designed for the Fawry Internship Challenge. This project demonstrates object-oriented programming principles, inventory handling, and modular design using abstract classes and interfaces.
+
+---
+
+## Features
+
+- Add multiple types of books to inventory:
+  - PaperBook: has stock, can be shipped
+  - EBook: has file type, sent via email
+  - ShowcaseBook: not for sale (demo only)
+- Remove outdated books based on publication year
+- Buy books using ISBN and quantity
+- Simulate delivery:
+  - PaperBooks go to a shipping service
+  - EBooks go to a mail service
+- Error handling for:
+  - Invalid ISBN
+  - Out of stock
+  - ShowcaseBook purchase attempt
+
+---
+
+## Project Structure
+
+```
+hesham-bookstore/
+├── README.md
+├── screenshot.png
+└── src/
+    ├── app/
+    │   └── HeshamBookstoreTest.java
+    ├── model/
+    └── service/
+```
+
+---
+
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### Compile
 
-## Folder Structure
+```bash
+javac -d bin src/app/HeshamBookstoreTest.java src/model/*.java src/service/*.java
+```
 
-The workspace contains two folders by default, where:
+### Run
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+```bash
+java -cp bin app.HeshamBookstoreTest
+```
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+---
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Sample Output (Screenshot)
 
-## Dependency Management
+![Console Screenshot](screenshot.png)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+---
+
+## Author
+
+**Hesham Ebaid**  
